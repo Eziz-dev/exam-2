@@ -11,6 +11,10 @@ body {
     background-attachment: fixed;
 }
 
+.bg-shadow {
+    background-color: rgba(0, 0, 0, 0.061);
+}
+
 .bg-gray {
     background-color: #181818;
 }
