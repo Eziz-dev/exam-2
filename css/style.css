@@ -4,7 +4,7 @@ body {
 
 
 .bg-image-top {
-    background-image: url(..//img/xxxmin.jpg);
+    background-image: url(../img/xxxmin.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,4 +17,12 @@ body {
 
 .bg-gray {
     background-color: #181818;
+}
+
+.bg-image-footer {
+    background-image: url(../img/sd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
