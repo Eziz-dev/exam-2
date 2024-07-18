@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="icons/IMG_1431.png" type="image/x-icon">
     <link rel="stylesheet" href="fancybox/ui-5.0.36/dist/fancybox/fancybox.css">
-    <script src="fancybox/ui-5.0.36/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/aos.js"></script>
 </head>
 
@@ -33,13 +32,16 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#pizza-menu">Pizza Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#side-dishes">Side dishes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a class="nav-link" href="#testemonials">Testemonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact us</a>
                     </li>
             </div>
         </nav>
@@ -65,14 +67,16 @@
     </div>
 
     <!-- section 2 cards -->
-    <div class="bg-gray">
+    <div class="bg-gray" id="pizza-menu">
         <div class="container-xl">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 pb-5">
                 <div class="col"> <!-- 1 -->
                     <div class="card h-100" data-aos="flip-left" data-aos-once="true" data-aos-duration="850">
-                        <a href="./img/433.jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                            <img src="./img/433.jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="cheese pizza">
-                        </a>
+                        <div class="card-image-top">
+                            <a href="./img/433.jpg" data-fancybox="gallery" data-caption="Cheese Pizza">
+                                <img src="./img/433.jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="cheese pizza" srcset="">
+                            </a>
+                        </div>
                         <div class="card-body">
                             <div class="card-title h4 text-center fw-bold">Cheese Pizza</div>
                             <div class="card-text text-center fw-medium fst-italic p-3">
@@ -85,8 +89,8 @@
                 <div class="col"> <!-- 2 -->
                     <div class="card h-100" data-aos="flip-left" data-aos-once="true" data-aos-duration="850">
                         <div class="card-img-top">
-                            <a href="./img/7777 (1).jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                                <img src="./img/7777 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Pepperoni pizza">
+                            <a href="./img/7777 (1).jpg" data-fancybox="gallery" data-caption="Pepperoni Pizza">
+                                <img src="./img/7777 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Pepperoni pizza" srcset="">
                             </a>
                         </div>
                         <div class="card-body">
@@ -101,8 +105,8 @@
                 <div class="col"> <!-- 3 -->
                     <div class="card h-100" data-aos="flip-left" data-aos-once="true" data-aos-duration="850">
                         <div class="card-img-top">
-                            <a href="./img/p1 (1).jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                                <img src="./img/p1 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Vegetarian pizza">
+                            <a href="./img/p1 (1).jpg" data-fancybox data-caption="Vegetarian Pizza">
+                                <img src="./img/p1 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Vegetarian pizza" srcset="">
                             </a>
                         </div>
                         <div class="card-body">
@@ -117,8 +121,8 @@
                 <div class="col"> <!-- 4 -->
                     <div class="card h-100" data-aos="flip-right" data-aos-once="true" data-aos-duration="850">
                         <div class="card-img-top">
-                            <a href="./img/09 (1).jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                                <img src="./img/09 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Mozarella pizza">
+                            <a href="./img/09 (1).jpg" data-fancybox="gallery" data-caption="Mozarella Pizza"> 
+                                <img src="./img/09 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Mozarella pizza" srcset="">
                             </a>
                         </div>
                         <div class="card-body">
@@ -133,8 +137,8 @@
                 <div class="col"> <!-- 5 -->
                     <div class="card h-100" data-aos="flip-right" data-aos-once="true" data-aos-duration="850">
                         <div class="card-img-top">
-                            <a href="./img/46 (1).jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                                <img src="./img/46 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Sicilian pizza">
+                            <a href="./img/46 (1).jpg" data-fancybox="gallery" data-caption="Sicilian Pizza">
+                                <img src="./img/46 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Sicilian pizza" srcset="">
                             </a>
                         </div>
                         <div class="card-body">
@@ -149,8 +153,8 @@
                 <div class="col"> <!-- 6 -->
                     <div class="card h-100" data-aos="flip-right" data-aos-once="true" data-aos-duration="850">
                         <div class="card-img-top">
-                            <a href="./img/68 (1).jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                                <img src="./img/68 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Grilled pizza">
+                            <a href="./img/68 (1).jpg" data-fancybox="gallery" data-caption="Grilled Pizza">
+                                <img src="./img/68 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Grilled pizza" srcset="">
                             </a>
                         </div>
                         <div class="card-body">
@@ -165,8 +169,8 @@
                 <div class="col"> <!-- 7 -->
                     <div class="card h-100" data-aos="flip-left" data-aos-once="true" data-aos-duration="850">
                         <div class="card-img-top">
-                            <a href="./img/53 (1).jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                                <img src="./img/53 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Veggie pizza">
+                            <a href="./img/53 (1).jpg" data-fancybox="gallery" data-caption="Veggie Pizza">
+                                <img src="./img/53 (1).jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Veggie pizza" srcset="">
                             </a>
                         </div>
                         <div class="card-body">
@@ -181,8 +185,8 @@
                 <div class="col"> <!-- 8 -->
                     <div class="card h-100" data-aos="flip-left" data-aos-once="true" data-aos-duration="850">
                         <div class="card-img-top">
-                            <a href="./img/22.jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                                <img src="./img/22.jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Chicken pizza">
+                            <a href="./img/22.jpg" data-fancybox="gallery" data-caption="Chicken Pizza">
+                                <img src="./img/22.jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Chicken pizza" srcset="">
                             </a>
                         </div>
                         <div class="card-body">
@@ -197,8 +201,8 @@
                 <div class="col"> <!-- 9 -->
                     <div class="card h-100" data-aos="flip-left" data-aos-once="true" data-aos-duration="850">
                         <div class="card-img-top">
-                            <a href="./img/43.jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                                <img src="./img/43.jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Hot brown pizza">
+                            <a href="./img/43.jpg" data-fancybox="gallery" data-caption="Hot brown Pizza">
+                                <img src="./img/43.jpg" class="card-img-top rounded-5 p-3 img-fluid" alt="Hot brown pizza" srcset="">
                             </a>
                         </div>
                         <div class="card-body">
@@ -214,7 +218,7 @@
         </div>
 
         <!-- section 3 menu -->
-        <div class="container-xl">
+        <div class="container-xl" id="side-dishes">
             <div class="row pt-0 pt-lg-5">
                 <div class="col-12 col-lg-6 pb-3 pb-lg-5 mb-3 mb-lg-5" data-aos="zoom-in-right" data-aos-once="true" data-aos-duration="1000"> <!-- first column -->
                     <div class="row py-0 py-lg-3">
@@ -320,7 +324,7 @@
     </div>
 
     <!-- section 4 testimonials -->
-    <div class="bg-white">
+    <div class="bg-white" id="testemonials">
         <div class="container-xl">
             <div class="row pt-4 pt-lg-5 mt-0 mt-lg-5 pb-0 pb-lg-5 mb-0 mb-lg-5">
                 <div class="col-12 col-lg-6">
@@ -328,8 +332,8 @@
                         Testimonials
                     </div>
                     <div>
-                        <a href="./img/4.jpg" data-fancybox data-caption="Single image" data-srcset="image-a-xl.jpeg 480w, image-a-2xl.jpeg 800w" data-sizes="(max-width: 600px) 480px, 800px">
-                            <img src="./img/42.jpg" alt="..." class="img-fluid rounded-5 py-3">
+                        <a href="./img/42.jpg" data-fancybox="gallery" data-caption="Assorted Pizza">
+                            <img src="./img/42.jpg" alt="..." class="img-fluid rounded-5 py-3" srcset="">
                         </a>
                     </div>
                 </div>
@@ -386,7 +390,7 @@
     </div>
 
     <!-- section 5 footer -->
-    <div class="bg-image-footer">
+    <div class="bg-image-footer" id="footer">
         <div class="container-xl">
             <div class="py-0 py-lg-5">
                 <div class="py-5">
@@ -462,6 +466,8 @@
     
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/splide.min.js"></script>
+    <script src="fancybox/ui-5.0.36/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
